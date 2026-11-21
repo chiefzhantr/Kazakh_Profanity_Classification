@@ -1,0 +1,50 @@
+{
+  "model": "FacebookAI/xlm-roberta-base",
+  "seed": 42,
+  "epochs": 4,
+  "lr": 2e-05,
+  "batch_size": 16,
+  "max_length": 128,
+  "device": "cpu",
+  "log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5567,
+      "val_precision": 0.8283,
+      "val_recall": 0.781,
+      "val_f1": 0.8039,
+      "minutes": 2.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3452,
+      "val_precision": 0.8911,
+      "val_recall": 0.8571,
+      "val_f1": 0.8738,
+      "minutes": 2.8
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2231,
+      "val_precision": 0.9143,
+      "val_recall": 0.9143,
+      "val_f1": 0.9143,
+      "minutes": 2.7
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1442,
+      "val_precision": 0.9245,
+      "val_recall": 0.9333,
+      "val_f1": 0.9289,
+      "minutes": 2.7
+    }
+  ],
+  "best_val_f1_at_0.5": 0.9289099526066351,
+  "threshold": 0.5,
+  "val_at_threshold": {
+    "precision": 0.9245283018867925,
+    "recall": 0.9333333333333333,
+    "f1": 0.9289099526066351
+  }
+}

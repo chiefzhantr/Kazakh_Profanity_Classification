@@ -1,0 +1,66 @@
+{
+  "model": "FacebookAI/xlm-roberta-base",
+  "seed": 42,
+  "epochs": 6,
+  "lr": 2e-05,
+  "batch_size": 16,
+  "max_length": 128,
+  "device": "cpu",
+  "log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5722,
+      "val_precision": 0.8411,
+      "val_recall": 0.8571,
+      "val_f1": 0.8491,
+      "minutes": 2.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3579,
+      "val_precision": 0.819,
+      "val_recall": 0.9048,
+      "val_f1": 0.8597,
+      "minutes": 2.8
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2404,
+      "val_precision": 0.8649,
+      "val_recall": 0.9143,
+      "val_f1": 0.8889,
+      "minutes": 2.7
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1759,
+      "val_precision": 0.8807,
+      "val_recall": 0.9143,
+      "val_f1": 0.8972,
+      "minutes": 2.7
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1342,
+      "val_precision": 0.9223,
+      "val_recall": 0.9048,
+      "val_f1": 0.9135,
+      "minutes": 2.8
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.113,
+      "val_precision": 0.8899,
+      "val_recall": 0.9238,
+      "val_f1": 0.9065,
+      "minutes": 2.7
+    }
+  ],
+  "best_val_f1_at_0.5": 0.9134615384615384,
+  "threshold": 0.44,
+  "val_at_threshold": {
+    "precision": 0.9230769230769231,
+    "recall": 0.9142857142857143,
+    "f1": 0.9186602870813397
+  }
+}

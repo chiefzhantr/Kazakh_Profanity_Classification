@@ -1,0 +1,49 @@
+{
+  "labeled_rows": 2543,
+  "per_round": {
+    "1": {
+      "0": 445,
+      "1": 62
+    },
+    "2": {
+      "0": 1101,
+      "1": 935
+    }
+  },
+  "exact_duplicates_removed": 4,
+  "label_conflicts_removed": 0,
+  "near_duplicate_groups": 4,
+  "train": {
+    "n": 2032,
+    "label_0": 1252,
+    "label_1": 780
+  },
+  "val": {
+    "n": 254,
+    "label_0": 149,
+    "label_1": 105
+  },
+  "test": {
+    "n": 253,
+    "label_0": 143,
+    "label_1": 110
+  },
+  "seed": 42,
+  "final_rows": 2539,
+  "domains": {
+    "appstore": 2001,
+    "market": 389,
+    "mapping": 87,
+    "bookstore": 62
+  },
+  "words_per_review": {
+    "count": 2539.0,
+    "mean": 11.3,
+    "std": 15.0,
+    "min": 1.0,
+    "25%": 3.0,
+    "50%": 6.0,
+    "75%": 13.0,
+    "max": 281.0
+  }
+}

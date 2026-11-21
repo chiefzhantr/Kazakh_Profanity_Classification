@@ -1,0 +1,75 @@
+device: cpu
+W1121 14:15:07.098000 91547 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 13656.81it/s]
+[transformers] [1mXLMRobertaForSequenceClassification LOAD REPORT[0m from: FacebookAI/xlm-roberta-base
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.layer_norm.bias     | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.out_proj.bias    | MISSING    | 
+classifier.dense.bias       | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  epoch 1 step 20/127 loss 0.6687
+  epoch 1 step 40/127 loss 0.6685
+  epoch 1 step 60/127 loss 0.6548
+  epoch 1 step 80/127 loss 0.6479
+  epoch 1 step 100/127 loss 0.6124
+  epoch 1 step 120/127 loss 0.5838
+{'epoch': 1, 'train_loss': 0.5722, 'val_precision': 0.8411, 'val_recall': 0.8571, 'val_f1': 0.8491, 'minutes': 2.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.08it/s]
+  saved best model (val F1 0.8491)
+  epoch 2 step 20/127 loss 0.4704
+  epoch 2 step 40/127 loss 0.4334
+  epoch 2 step 60/127 loss 0.4139
+  epoch 2 step 80/127 loss 0.3920
+  epoch 2 step 100/127 loss 0.3725
+  epoch 2 step 120/127 loss 0.3591
+{'epoch': 2, 'train_loss': 0.3579, 'val_precision': 0.819, 'val_recall': 0.9048, 'val_f1': 0.8597, 'minutes': 2.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.56it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  2.56it/s]
+  saved best model (val F1 0.8597)
+  epoch 3 step 20/127 loss 0.3192
+  epoch 3 step 40/127 loss 0.2941
+  epoch 3 step 60/127 loss 0.2723
+  epoch 3 step 80/127 loss 0.2529
+  epoch 3 step 100/127 loss 0.2448
+  epoch 3 step 120/127 loss 0.2402
+{'epoch': 3, 'train_loss': 0.2404, 'val_precision': 0.8649, 'val_recall': 0.9143, 'val_f1': 0.8889, 'minutes': 2.7}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.34it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.34it/s]
+  saved best model (val F1 0.8889)
+  epoch 4 step 20/127 loss 0.1825
+  epoch 4 step 40/127 loss 0.1517
+  epoch 4 step 60/127 loss 0.1603
+  epoch 4 step 80/127 loss 0.1748
+  epoch 4 step 100/127 loss 0.1799
+  epoch 4 step 120/127 loss 0.1790
+{'epoch': 4, 'train_loss': 0.1759, 'val_precision': 0.8807, 'val_recall': 0.9143, 'val_f1': 0.8972, 'minutes': 2.7}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]
+  saved best model (val F1 0.8972)
+  epoch 5 step 20/127 loss 0.0838
+  epoch 5 step 40/127 loss 0.1339
+  epoch 5 step 60/127 loss 0.1236
+  epoch 5 step 80/127 loss 0.1358
+  epoch 5 step 100/127 loss 0.1335
+  epoch 5 step 120/127 loss 0.1246
+{'epoch': 5, 'train_loss': 0.1342, 'val_precision': 0.9223, 'val_recall': 0.9048, 'val_f1': 0.9135, 'minutes': 2.8}
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.40it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.40it/s]
+  saved best model (val F1 0.9135)
+  epoch 6 step 20/127 loss 0.1151
+  epoch 6 step 40/127 loss 0.1308
+  epoch 6 step 60/127 loss 0.1236
+  epoch 6 step 80/127 loss 0.1232
+  epoch 6 step 100/127 loss 0.1174
+  epoch 6 step 120/127 loss 0.1131
+{'epoch': 6, 'train_loss': 0.113, 'val_precision': 0.8899, 'val_recall': 0.9238, 'val_f1': 0.9065, 'minutes': 2.7}
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 8437.64it/s]
+threshold 0.44: val F1 0.9187 (at 0.5: 0.9135)

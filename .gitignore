@@ -1,0 +1,12 @@
+# model weights (1.1 GB) live on Hugging Face, not in git
+model/
+# full KazSAnDRA download (get it with the command in README)
+data/kazsandra_full/
+# raw labeling sheets: original unredacted review texts (may contain names)
+my_labels/
+_archive_old_attempt/
+.venv/
+__pycache__/
+.DS_Store
+~$*
+*.xlsx
